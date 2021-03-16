@@ -61,7 +61,7 @@ class Comment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.user
+        return self.user.email
 
 
 class Rating(models.Model):
